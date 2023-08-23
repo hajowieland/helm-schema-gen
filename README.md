@@ -22,8 +22,8 @@ binary version
 
 ```
 $ helm plugin install https://github.com/hajowieland/helm-schema-gen.git
-hajowieland/helm-schema-gen info checking GitHub for tag '0.0.4'
-hajowieland/helm-schema-gen info found version: 0.0.4 for 0.0.4/Darwin/x86_64
+hajowieland/helm-schema-gen info checking GitHub for tag '0.0.11'
+hajowieland/helm-schema-gen info found version: 0.0.11 for 0.0.11/Darwin/x86_64
 hajowieland/helm-schema-gen info installed ./bin/helm-schema-gen
 Installed plugin: schema-gen
 ```
@@ -214,6 +214,13 @@ You can save it to a file like this
 ```
 helm schema-gen values.yaml > values.schema.json
 ```
+
+## Publish new release
+
+- Update version in `plugin.yaml`
+- Update version in `scripts/install_version.sh`
+- Release a git tag with version
+
 
 ## Issues? Feature Requests? Proposals? Feedback?
 
