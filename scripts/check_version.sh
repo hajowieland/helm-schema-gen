@@ -22,7 +22,7 @@ then
     exit 1
 fi
 
-plugin_version=$(yq read $plugin_yaml version)
+plugin_version=$(cat $plugin_yaml | yq '.version')
 
 if [ "$plugin_version" != "$expected_version" ];
 then
